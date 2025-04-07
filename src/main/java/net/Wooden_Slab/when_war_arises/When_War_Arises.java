@@ -1,6 +1,9 @@
 package net.Wooden_Slab.when_war_arises;
 
 import com.mojang.logging.LogUtils;
+import net.Wooden_Slab.when_war_arises.item.ModCreativeModTabs;
+import net.Wooden_Slab.when_war_arises.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -16,14 +19,18 @@ import org.slf4j.Logger;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(When_War_Arises.MOD_ID)
 public class When_War_Arises {
-    // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "when_war_arises";
-    // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public When_War_Arises(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModCreativeModTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
+
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
     }
@@ -33,7 +40,9 @@ public class When_War_Arises {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.RIOT_SHIELD);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

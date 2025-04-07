@@ -1,0 +1,22 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IWI",
+    "III",
+    " I "
+  ],
+
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "item":"minecraft:yellow_wool"
+  }
+},
+
+  "result": {
+    "item": "when_war_arises:riot_shield"
+  }
+}
