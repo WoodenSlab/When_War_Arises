@@ -18,11 +18,16 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.when_war_arises_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RIOT_SHIELD.get());
+                        output.accept(ModItems.HAPPY_RIOT_SHIELD.get());
+                        output.accept(ModItems.FUNNY_RIOT_SHIELD.get());
+
                     })
                     .build());
 
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TABS.register(eventBus);
     }
+
+
 
 }

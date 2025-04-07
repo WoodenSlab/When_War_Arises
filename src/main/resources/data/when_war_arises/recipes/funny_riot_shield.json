@@ -1,0 +1,17 @@
+{
+  "type" : "minecraft:crafting_shapeless",
+  "category": "misc",
+
+  "ingredients" : [
+    {
+      "item": "when_war_arises:happy_riot_shield"
+    },
+    {
+      "item": "minecraft:red_dye"
+    }
+  ],
+
+  "result": {
+    "item": "when_war_arises:funny_riot_shield"
+  }
+}

@@ -17,6 +17,16 @@ public class ModItems {
                     .durability(750)
             ));
 
+    public static final RegistryObject<Item> HAPPY_RIOT_SHIELD = ITEMS.register("happy_riot_shield",
+            () -> new RiotShieldItem(new Item.Properties()
+                    .durability(750)
+            ));
+
+    public static final RegistryObject<Item> FUNNY_RIOT_SHIELD = ITEMS.register("funny_riot_shield",
+            () -> new RiotShieldItem(new Item.Properties()
+                    .durability(750)
+            ));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
 
