@@ -16,4 +16,3 @@ public class RiotShieldItem extends ShieldItem {
         return repair.is(Items.IRON_INGOT);
     }
 }
-
