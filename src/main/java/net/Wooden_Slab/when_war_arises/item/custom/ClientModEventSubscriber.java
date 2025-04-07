@@ -2,11 +2,17 @@ package net.Wooden_Slab.when_war_arises.item.custom;
 
 import net.Wooden_Slab.when_war_arises.When_War_Arises;
 import net.Wooden_Slab.when_war_arises.item.ModItems;
+import net.Wooden_Slab.when_war_arises.sound.ModSounds;
 import net.minecraft.client.renderer.item.ClampedItemPropertyFunction;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ShieldItem;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
+import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -39,5 +45,4 @@ public class ClientModEventSubscriber {
                     return 0.0F;
                 });
     }
-
 }

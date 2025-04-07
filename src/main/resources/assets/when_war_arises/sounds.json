@@ -1,8 +1,12 @@
 {
-  "riot_shield_block" : {
-    "subtitles": "sounds:when_war_arises.damage_blocked_by_riot_shield",
+  "damage_blocked_by_riot_shield": {
+    "subtitle": "sounds:when_war_arises.damage_blocked_by_riot_shield",
     "sounds": [
-      "when_war_arises:damage_blocked_by_riot_shield"
+      "when_war_arises:damage_blocked_by_riot_shield1",
+      "when_war_arises:damage_blocked_by_riot_shield2",
+      "when_war_arises:damage_blocked_by_riot_shield3",
+      "when_war_arises:damage_blocked_by_riot_shield4",
+      "when_war_arises:damage_blocked_by_riot_shield5"
     ]
   }
 }
