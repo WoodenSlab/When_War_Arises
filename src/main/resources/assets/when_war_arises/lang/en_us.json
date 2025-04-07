@@ -2,5 +2,8 @@
   "item.when_war_arises.riot_shield": "Riot Shield",
   "item.when_war_arises.happy_riot_shield": "Happy Riot Shield",
   "item.when_war_arises.funny_riot_shield": "Funny Riot Shield",
+
+  "sounds.when_war_arises.damage_blocked_by_riot_shield": "Damage Blocked By Riot Shield",
+
   "creativetab.when_war_arises_tab": "When War Arises"
 }

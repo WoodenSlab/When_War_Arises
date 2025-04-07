@@ -1,0 +1,8 @@
+{
+  "riot_shield_block" : {
+    "subtitles": "sounds:when_war_arises.damage_blocked_by_riot_shield",
+    "sounds": [
+      "when_war_arises:damage_blocked_by_riot_shield"
+    ]
+  }
+}
