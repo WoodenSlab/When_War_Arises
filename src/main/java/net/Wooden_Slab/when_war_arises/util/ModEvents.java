@@ -24,7 +24,7 @@ public class ModEvents {
             ItemStack usingItem = player.getUseItem();
 
             if (usingItem.getItem() instanceof RiotShieldItem) {
-                When_War_Arises.LOGGER.info("ShieldBlockEvent déclenché !");
+                When_War_Arises.LOGGER.info("ShieldBlockEvent triggered !");
                 player.playSound(ModSounds.DAMAGE_BLOCKED_BY_RIOT_SHIELD.get(), 1.0F, 1.0F);
             }
         }
