@@ -20,14 +20,13 @@ public class RiotShieldItem extends ShieldItem {
 
     @Override
     public @NotNull UseAnim getUseAnimation(@NotNull ItemStack stack) {
-        // Indique que l'item utilise l'animation de blocage (comme une épée ou un bouclier)
         return UseAnim.BLOCK;
     }
 
     @Override
     public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
-        player.startUsingItem(hand); // Démarre l'animation de blocage
+        player.startUsingItem(hand);
         return InteractionResultHolder.consume(itemstack);
     }
 }

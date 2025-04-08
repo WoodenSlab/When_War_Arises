@@ -18,7 +18,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(When_War_Arises.MOD_ID)
 public class When_War_Arises {
     public static final String MOD_ID = "when_war_arises";
@@ -31,7 +30,6 @@ public class When_War_Arises {
 
         ModItems.register(modEventBus);
 
-
         ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -41,7 +39,6 @@ public class When_War_Arises {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        ModEvents.init();
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
@@ -56,18 +53,14 @@ public class When_War_Arises {
         }
     }
 
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
         }
     }
 }

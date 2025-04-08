@@ -23,10 +23,8 @@ public class ModEvents {
         if (entity instanceof Player player) {
             ItemStack usingItem = player.getUseItem();
 
-            // Ne joue le son QUE si c’est un RiotShieldItem
             if (usingItem.getItem() instanceof RiotShieldItem) {
                 When_War_Arises.LOGGER.info("ShieldBlockEvent déclenché !");
-
                 player.playSound(ModSounds.DAMAGE_BLOCKED_BY_RIOT_SHIELD.get(), 1.0F, 1.0F);
             }
         }
