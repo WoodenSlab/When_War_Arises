@@ -1,6 +1,6 @@
 {
   "damage_blocked_by_riot_shield": {
-    "subtitle": "sounds:when_war_arises.damage_blocked_by_riot_shield",
+    "subtitle": "sounds.when_war_arises.damage_blocked_by_riot_shield",
     "sounds": [
       "when_war_arises:damage_blocked_by_riot_shield1",
       "when_war_arises:damage_blocked_by_riot_shield2",

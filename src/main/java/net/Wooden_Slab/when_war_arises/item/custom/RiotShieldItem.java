@@ -1,7 +1,5 @@
 package net.Wooden_Slab.when_war_arises.item.custom;
 
-import net.Wooden_Slab.when_war_arises.sound.ModSounds;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -13,6 +11,7 @@ public class RiotShieldItem extends ShieldItem {
     public RiotShieldItem(Properties properties) {
         super(properties);
     }
+
 
     @Override
     public boolean isValidRepairItem(@NotNull ItemStack toRepair, ItemStack repair) {
@@ -28,10 +27,7 @@ public class RiotShieldItem extends ShieldItem {
     @Override
     public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
-        player.playSound(ModSounds.DAMAGE_BLOCKED_BY_RIOT_SHIELD.get(), 1.0F, 1.0F);
         player.startUsingItem(hand); // Démarre l'animation de blocage
         return InteractionResultHolder.consume(itemstack);
-
     }
-
 }

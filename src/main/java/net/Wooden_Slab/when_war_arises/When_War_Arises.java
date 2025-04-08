@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.Wooden_Slab.when_war_arises.item.ModCreativeModTabs;
 import net.Wooden_Slab.when_war_arises.item.ModItems;
 import net.Wooden_Slab.when_war_arises.sound.ModSounds;
+import net.Wooden_Slab.when_war_arises.util.ModEvents;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -30,6 +31,7 @@ public class When_War_Arises {
 
         ModItems.register(modEventBus);
 
+
         ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -39,6 +41,7 @@ public class When_War_Arises {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        ModEvents.init();
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {

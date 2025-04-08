@@ -12,8 +12,8 @@ public class ModSounds {
     public static final DeferredRegister<SoundEvent> SOUND_EVENT =
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, When_War_Arises.MOD_ID);
 
-    public static final RegistryObject<SoundEvent> DAMAGE_BLOCKED_BY_RIOT_SHIELD =
-            registerSoundEvent("damage_blocked_by_riot_shield");
+    public static final RegistryObject<SoundEvent> DAMAGE_BLOCKED_BY_RIOT_SHIELD = registerSoundEvent("damage_blocked_by_riot_shield");
+
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         return SOUND_EVENT.register(name, () ->
