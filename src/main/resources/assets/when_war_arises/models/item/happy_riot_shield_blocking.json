@@ -1,4 +1,5 @@
 {
+	"credit": "Made with Blockbench",
 	"parent": "when_war_arises:item/happy_riot_shield",
 	"texture_size": [32, 32],
 	"textures": {
