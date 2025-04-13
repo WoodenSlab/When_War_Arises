@@ -20,6 +20,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.RIOT_SHIELD.get());
                         output.accept(ModItems.HAPPY_RIOT_SHIELD.get());
                         output.accept(ModItems.FUNNY_RIOT_SHIELD.get());
+                        output.accept(ModItems.TASER_GUN.get());
+                        output.accept(ModItems.BATTERY.get());
 
                     })
                     .build());

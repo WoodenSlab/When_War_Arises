@@ -1,6 +1,10 @@
 package net.Wooden_Slab.when_war_arises.item.custom;
 
 import net.Wooden_Slab.when_war_arises.When_War_Arises;
+import net.Wooden_Slab.when_war_arises.client.model.ModModelLayers;
+import net.Wooden_Slab.when_war_arises.client.model.TaserLightningModel;
+import net.Wooden_Slab.when_war_arises.client.renderer.entity.TaserLightningRenderer;
+import net.Wooden_Slab.when_war_arises.entity.ModEntities;
 import net.Wooden_Slab.when_war_arises.item.ModItems;
 import net.minecraft.client.renderer.item.ClampedItemPropertyFunction;
 import net.minecraft.client.renderer.item.ItemProperties;
@@ -40,4 +44,13 @@ public class ClientModEventSubscriber {
                 });
     }
 
+    @SubscribeEvent
+    public static void onRegisterLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(ModModelLayers.TASER_LIGHTNING, TaserLightningModel::createBodyLayer);
+    }
+
+    @SubscribeEvent
+    public static void onRegisterRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer(ModEntities.TASER_LIGHTNING.get(), TaserLightningRenderer::new);
+    }
 }
