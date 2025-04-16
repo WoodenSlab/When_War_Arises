@@ -5,6 +5,7 @@ import net.Wooden_Slab.when_war_arises.entity.ModEntities;
 import net.Wooden_Slab.when_war_arises.events.CommonForgeEvents;
 import net.Wooden_Slab.when_war_arises.item.ModCreativeModTabs;
 import net.Wooden_Slab.when_war_arises.item.ModItems;
+import net.Wooden_Slab.when_war_arises.sound.ModSounds;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -28,6 +29,8 @@ public class When_War_Arises {
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModSounds.register(modEventBus);
 
         ModEntities.register(modEventBus);
 

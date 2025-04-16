@@ -6,16 +6,21 @@ import net.Wooden_Slab.when_war_arises.client.model.TaserLightningModel;
 import net.Wooden_Slab.when_war_arises.client.renderer.entity.TaserLightningRenderer;
 import net.Wooden_Slab.when_war_arises.entity.ModEntities;
 import net.Wooden_Slab.when_war_arises.item.ModItems;
+import net.Wooden_Slab.when_war_arises.util.ModEvents;
 import net.minecraft.client.renderer.item.ClampedItemPropertyFunction;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = When_War_Arises.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientModEventSubscriber {
+    public static void init() {
+        MinecraftForge.EVENT_BUS.register(ModEvents.class);
+    }
 
     @SubscribeEvent
     public static void registerItemProperties(EntityRenderersEvent.RegisterRenderers event) {

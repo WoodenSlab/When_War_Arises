@@ -1,12 +1,8 @@
 {
-  "damage_blocked_by_riot_shield": {
-    "subtitle": "sounds.when_war_arises.damage_blocked_by_riot_shield",
+  "taser_shot": {
+    "subtitle": "sounds.when_war_arises.taser_shot",
     "sounds": [
-      "when_war_arises:damage_blocked_by_riot_shield1",
-      "when_war_arises:damage_blocked_by_riot_shield2",
-      "when_war_arises:damage_blocked_by_riot_shield3",
-      "when_war_arises:damage_blocked_by_riot_shield4",
-      "when_war_arises:damage_blocked_by_riot_shield5"
+      "when_war_arises:taser_shot"
     ]
   }
 }

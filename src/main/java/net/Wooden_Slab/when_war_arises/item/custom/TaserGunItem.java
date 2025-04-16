@@ -3,6 +3,7 @@ package net.Wooden_Slab.when_war_arises.item.custom;
 import net.Wooden_Slab.when_war_arises.entity.ModEntities;
 import net.Wooden_Slab.when_war_arises.entity.custom.TaserLightningEntity;
 import net.Wooden_Slab.when_war_arises.item.ModItems;
+import net.Wooden_Slab.when_war_arises.sound.ModSounds;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -64,7 +65,8 @@ public class TaserGunItem extends Item {
         player.getCooldowns().addCooldown(this, 100);
 
         // Sound
-        level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ARROW_SHOOT, SoundSource.PLAYERS, 1.0F, 1.0F);
+        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.TASER_SHOT.get(), SoundSource.PLAYERS, 1.0F, 1.0F);
+
 
         // Remove durability
         stack.hurtAndBreak(1, player, p -> p.broadcastBreakEvent(hand));

@@ -5,5 +5,7 @@
   "item.when_war_arises.taser_gun": "Taser Gun",
   "item.when_war_arises.battery": "Battery",
 
+  "sounds.when_war_arises.taser_shot": "Taser Shot",
+
   "creativetab.when_war_arises_tab": "When War Arises"
 }
