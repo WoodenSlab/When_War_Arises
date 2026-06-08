@@ -1,0 +1,11 @@
+{
+  "item.whenwararises.riot_shield": "Riot Shield",
+  "item.whenwararises.happy_riot_shield": "Happy Riot Shield",
+  "item.whenwararises.funny_riot_shield": "Funny Riot Shield",
+  "item.whenwararises.taser_gun": "Taser Gun",
+  "item.whenwararises.battery": "Battery",
+
+  "sounds.whenwararises.taser_gun_fire": "Taser Gun Fire",
+
+  "itemGroup.whenwararises": "When War Arises"
+}

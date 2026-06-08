@@ -1,0 +1,42 @@
+package net.woodenslab.whenwararises.item;
+
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
+
+public class RiotShieldItem extends ShieldItem {
+    public RiotShieldItem(Properties properties) {
+        super(properties) ;
+    }
+
+    @Override
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+        ItemStack itemstack = player.getItemInHand(hand);
+        player.startUsingItem(hand);
+
+        return InteractionResultHolder.consume(itemstack);
+    }
+
+    @Override
+    public boolean isValidRepairItem(@NotNull ItemStack toRepair, ItemStack repair) {
+        return repair.is(Items.IRON_INGOT);
+    }
+
+    @Override
+    public @NotNull UseAnim getUseAnimation(@NotNull ItemStack stack) {
+        return UseAnim.BLOCK;
+    }
+
+    @Override
+    public boolean isBookEnchantable(ItemStack stack, ItemStack book) {
+        if (EnchantmentHelper.getEnchantments(book).containsKey(Enchantments.BINDING_CURSE )) {
+            return false;
+        }
+        return super.isBookEnchantable(stack, book);
+    }
+}

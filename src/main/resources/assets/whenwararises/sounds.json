@@ -1,0 +1,8 @@
+{
+  "taser_gun_fire": {
+    "subtitles": "sounds.whenwararises.taser_gun_fire",
+    "sounds": [
+      "whenwararises:taser_gun_fire"
+    ]
+  }
+}

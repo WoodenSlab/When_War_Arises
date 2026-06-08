@@ -1,0 +1,12 @@
+{
+  "parent": "whenwararises:item/taser_gun_idle",
+  "textures": {
+    "1": "whenwararises:item/taser_gun"
+  },
+  "overrides": [
+    {
+      "predicate": { "whenwararises:fire": 1 },
+      "model": "whenwararises:item/taser_gun_fire"
+    }
+  ]
+}

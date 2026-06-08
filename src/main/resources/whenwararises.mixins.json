@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "net.woodenslab.whenwararises.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "whenwararises.refmap.json",
+  "client": [
+    "client.ItemInHandLayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
