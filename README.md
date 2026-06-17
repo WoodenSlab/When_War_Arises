@@ -1,4 +1,5 @@
 [![CurseForge downloads](http://cf.way2muchnoise.eu/full_1239846_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/when_war_arises)
+![Modrinth Downloads](https://img.shields.io/modrinth/dt/when-war-arises?logo=modrinth&label=&suffix=%20&style=flat&color=242629&labelColor=5CA424&logoColor=1C1C1C)
 
 # When War Arises
 
