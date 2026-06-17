@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "item": "minecraft:red_wool"
+    }
+  },
+  "pattern": [
+    "IWI",
+    "III",
+    " I "
+  ],
+  "result": {
+    "item": "whenwararises:funny_riot_shield"
+  },
+  "show_notification": true
+}

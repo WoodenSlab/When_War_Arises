@@ -1,6 +1,5 @@
 {
   "parent": "minecraft:item/generated",
-  "texture_size": [16, 16],
   "textures": {
     "layer0": "whenwararises:item/battery"
   }

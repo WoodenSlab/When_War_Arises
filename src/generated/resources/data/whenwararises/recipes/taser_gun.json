@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "whenwararises:battery"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "DGR",
+    "G  ",
+    "B  "
+  ],
+  "result": {
+    "item": "whenwararises:taser_gun"
+  },
+  "show_notification": true
+}
