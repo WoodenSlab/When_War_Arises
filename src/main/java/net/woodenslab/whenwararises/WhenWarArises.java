@@ -8,10 +8,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.woodenslab.whenwararises.client.ClientHandler;
 import net.woodenslab.whenwararises.client.render.TaserRenderEvents;
-import net.woodenslab.whenwararises.init.ModCreativeModeTabs;
-import net.woodenslab.whenwararises.init.ModItems;
-import net.woodenslab.whenwararises.init.ModParticleTypes;
-import net.woodenslab.whenwararises.init.ModSounds;
+import net.woodenslab.whenwararises.init.*;
 import org.slf4j.Logger;
 
 @Mod(WhenWarArises.MOD_ID)
@@ -26,6 +23,7 @@ public class WhenWarArises {
         ModItems.register(modEventBus);
         ModSounds.register(modEventBus);
         ModParticleTypes.register(modEventBus);
+        ModEffects.register(modEventBus);
 
         modEventBus.addListener(this::onClientSetup);
 

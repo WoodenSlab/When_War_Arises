@@ -23,6 +23,7 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import net.woodenslab.whenwararises.WhenWarArises;
 import net.woodenslab.whenwararises.client.render.ModArmPoses;
+import net.woodenslab.whenwararises.init.ModEffects;
 import net.woodenslab.whenwararises.init.ModItems;
 import net.woodenslab.whenwararises.init.ModParticleTypes;
 import net.woodenslab.whenwararises.init.ModSounds;
@@ -115,9 +116,8 @@ public class TaserGunItem extends Item {
                 actualHitPos = target.getBoundingBox().getCenter();
 
                 target.hurt(level.damageSources().mobAttack(player), 2.0F);
-                target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 4));
-                target.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 60));
-                target.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 60, 2));
+                target.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 30));
+                target.addEffect(new MobEffectInstance(ModEffects.STUNNED_EFFECT.get(), 60));
 
             } else {
                 HitResult blockHit = player.pick(range, 1.0F, false);
